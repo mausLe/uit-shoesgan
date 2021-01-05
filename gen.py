@@ -6,7 +6,7 @@ import gdown
 import torch
 import numpy as np
 from torchvision import transforms, utils
-from model import Generator
+# from model import Generator
 
 SEED = 2020
 DEVICE = 'cuda'
@@ -61,7 +61,8 @@ def load_predefined_styles(styles_path=os.path.join("styles-predefined", "styles
         styles = json.load(f)
     return styles
 
-MODEL = load_model()
+# MODEL = load_model()
+MODEL = None
 LATENTS = load_latents()
 LABELS = load_labels()
 STYLES = load_predefined_styles()
