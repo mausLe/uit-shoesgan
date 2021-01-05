@@ -1,7 +1,6 @@
 import os
 import random
 import pickle
-import wget
 import json
 import gdown
 import torch
